@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tagline {
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 50px;
+  font-size: 20px;
+}
+
+img{
+  width: 50px;
+  height: 50px;
+}
+
+b {
+  text-align: left;
+  padding-top: 12px;
+  font-size: medium;
+}
+
+a:hover  {
+  background-color: yellow;
+}
+
+button.add-to-cart:hover {
+  background-color: yellow;
+}
+
+a {
+  font-weight: bold;
+  
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo {
+  flex: 30%;
+  padding-left: 10%;
+}
+
+.navbar {
+  padding-top: 30px;
+  flex: 70%;
+  text-align: center;
+}
+
+.navbar-cart {
+  padding-left: 65px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 1200px;
+}
+
+body {
+  font-family: 'Futura';
+}
+
+.search {
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.align-left {
+	float: left;
+  margin-left: 200px;
+}
+.align-right {
+	float: right;
+  margin-right: 200px;
+}

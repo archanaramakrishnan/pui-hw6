@@ -1,0 +1,17 @@
+.cart {
+  display: none;
+  text-align: left;
+}
+
+.cart.expanded {
+  margin-left: 150px;
+  display: flex;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.cart-image {
+  width: 160px;
+  height: 160px;
+  margin-right: 50px;
+}

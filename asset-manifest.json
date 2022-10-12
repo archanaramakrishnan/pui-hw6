@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pui-hw3/static/css/main.df2ffcce.css",
+    "main.js": "/pui-hw3/static/js/main.d5dcc1d9.js",
+    "static/js/787.406f5c32.chunk.js": "/pui-hw3/static/js/787.406f5c32.chunk.js",
+    "static/media/original-cinnamon-roll.jpg": "/pui-hw3/static/media/original-cinnamon-roll.cc1ea842c5d980a0fa60.jpg",
+    "index.html": "/pui-hw3/index.html",
+    "main.df2ffcce.css.map": "/pui-hw3/static/css/main.df2ffcce.css.map",
+    "main.d5dcc1d9.js.map": "/pui-hw3/static/js/main.d5dcc1d9.js.map",
+    "787.406f5c32.chunk.js.map": "/pui-hw3/static/js/787.406f5c32.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df2ffcce.css",
+    "static/js/main.d5dcc1d9.js"
+  ]
+}
