@@ -72,7 +72,6 @@ class HomePage extends Component {
       imageURL: this.state.rollData[rollIndex].imageURL,
       index: this.state.cart.length
     }
-    console.log("this.state.cart", this.state.cart)
     this.setState(prevState => ({
       ...prevState,
       cartTotalPrice: prevState.cartTotalPrice + Number(roll.price),
@@ -99,14 +98,11 @@ class HomePage extends Component {
   };
 
   removeFromCart = (deleteIndex) => {
-    console.log("CURRENTLY BEING DELETED: ", deleteIndex)
-    console.log("this.state.cart", this.state.cart)
     this.setState(prevState => ({     
       ...prevState,	
       cart: (this.state.cart.length === 1 ) ? [] : prevState.cart.filter(roll => roll !== this.state.cart[deleteIndex]),
       cartTotalPrice: (this.state.cart.length === 1 ) ? 0 : prevState.cartTotalPrice - this.state.cart[deleteIndex].price
     }))
-    console.log("this.state.cart", this.state.cart)
     this.state.cart.map((roll) => roll.index > deleteIndex ? roll.index = roll.index-1 : roll.index = roll.index);
 
   }
