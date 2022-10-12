@@ -8,7 +8,7 @@ class Cart extends Component {
         <div>
           <hr/>
           <p>Shopping Cart ({this.props.cart.length} items)</p>
-          <p>Total: $ {this.props.totalPrice}</p>
+          <p>Total: $ {this.props.cart.reduce((total, currentRoll) =>  total = total + Number(currentRoll.price) , 0 ).toFixed(2)}</p>
           <div className={this.props.className}>
             {this.props.cart.map((roll) => 
               {

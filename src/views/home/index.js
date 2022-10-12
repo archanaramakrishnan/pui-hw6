@@ -15,7 +15,7 @@ class HomePage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cart: [],
+      cart: JSON.parse(localStorage.getItem("cart")) || [],
       cartTotalPrice: 0,
       currentRoll: {},
       searchTerm: "",
@@ -60,7 +60,18 @@ class HomePage extends Component {
       ]
     };
 
+    this.state.cartTotalPrice = this.state.cart.reduce((total, currentRoll) =>  total = total + Number(currentRoll.price) , 0 );
     this.handleSortChange = this.handleSortChange.bind(this);
+  }
+
+  componentDidMount() {
+    // called when the component is first mounted
+    localStorage.setItem("cart", JSON.stringify(this.state.cart));
+  }
+
+  componentDidUpdate() {
+    // called when there are updates in the component e.g., state changes
+    localStorage.setItem("cart", JSON.stringify(this.state.cart));
   }
 
   showCart = (rollIndex, rollName, glazing, packSize, totalPrice) => {
@@ -74,7 +85,8 @@ class HomePage extends Component {
     }
     this.setState(prevState => ({
       ...prevState,
-      cartTotalPrice: prevState.cartTotalPrice + Number(roll.price),
+      // cartTotalPrice : this.state.cart.reduce((total, currentRoll) =>  total = total + Number(currentRoll.price) , 0 ),
+      // cartTotalPrice: prevState.cartTotalPrice + Number(roll.price),
       cart: [...prevState.cart, roll],
       currentRoll: roll
     }));
@@ -116,6 +128,7 @@ class HomePage extends Component {
   }
 
   render() {
+    console.log(this.state.cartTotalPrice.toFixed(2))
     return (
       <div className="App">
           <NavBar
