@@ -1,6 +1,6 @@
-# pui-hw5
-Programming Usable Interfaces Assignment 5
-Website URL: https://archanaramakrishnan.github.io/pui-hw5/
+# pui-hw6
+Programming Usable Interfaces Assignment 6
+Website URL: https://archanaramakrishnan.github.io/pui-hw6/
 
 
 # Getting Started with Create React App
